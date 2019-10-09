@@ -2,6 +2,16 @@
 
 <p>Welcome <%= current_user.email %>!</p>
 <div>
+<%= form_with(model: @user, local: true) do |form| %>
+<p>
+  <%= form.label :avatar %>
+  <%= form.file_field :avatar %>
+  <%= form.submit "Submit" %>
+</p>
+<% end %>
+</div>
+
+<div>
   <h2>Add new post </h2>
 <%= form_with(model: [@user, @user.posts.build], local: true) do |form| %>
 <p>
