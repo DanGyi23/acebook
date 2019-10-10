@@ -23,3 +23,5 @@
 .byebug_history
 /.idea
 coverage/
+.DS_Store
+spec/.DS_Store
