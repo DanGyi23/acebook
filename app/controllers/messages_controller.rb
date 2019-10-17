@@ -4,7 +4,7 @@ class MessagesController < ApplicationController
     @message.user = current_user
     if @message.save
       ActionCable.server.broadcast "chat-channel",
-                                      content: @message.content
+                                      content: @message
     else
     end
   end

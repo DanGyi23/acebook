@@ -16,7 +16,7 @@ consumer.subscriptions.create("ChatChannel", {
     // console.log(`receiving: ${data}`)
     $('#message_body').val('');
     var messages = $('#chatbox');
-    console.log({data});
     messages.prepend(data['message']);
+    document.$('#status-1').click()
   }
 });
