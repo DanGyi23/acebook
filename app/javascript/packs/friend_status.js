@@ -12,4 +12,8 @@ $(document).ready(function() {
 
       $(`#status-${buttonID}`).css("color", status);
   });
+
+  $(document).on("click","#chat-card",function(event){
+      $('#chatbox-btn').css("background-color", '#6c757d');
+  });
 });
