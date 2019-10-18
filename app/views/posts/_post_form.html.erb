@@ -1,0 +1,31 @@
+
+  <% if post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+        <% post.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+    <% end %>
+
+
+  <%= form_with(model: @post, local: true) do |form| %>
+
+
+    <div class="post-box">
+      <div class="container">
+        <div class="box blue">
+      <%= form.text_field :message, placeholder: "Write a post...", class: "form-control", size: "60x10" %>
+
+      <div >
+        <%= form.submit "Post!", class: "btn btn-secondary" %>
+      </div>
+    </div>
+      </div>
+    </div>
+
+
+  <% end %>
