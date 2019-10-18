@@ -7,7 +7,7 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("packs/friend_status")
+require("packs/chatbox_options")
 
 require("packs/post_options")
 
