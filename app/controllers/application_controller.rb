@@ -8,12 +8,6 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:account_update) { |u| u.permit(:avatar, :email, :password, :password_confirmation, :current_password) }
   end
 
-  def friend_status
-    respond_to do |format|
-      format.js
-    end
-  end
-
   private
   def after_sign_out_path_for(resource_or_scope)
     new_user_session_path
