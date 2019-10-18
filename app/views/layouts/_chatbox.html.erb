@@ -1,7 +1,7 @@
-<div class="card fixed-bottom ml-auto" style="width: 30rem;">
+<div class="card fixed-bottom ml-auto" id="chat-card" style="width: 30rem;">
   <div class="card-header">
     <div class="card-header" id="headingOne">
-        <button class="btn btn-secondary btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-secondary btn-block" id="chatbox-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           CHATBOX
         </button>
   </div>
@@ -13,9 +13,9 @@
     </div>
     <%= form_with model: @message do |f| %>
       <div class="input-group mb-3">
-        <%= f.text_field :body, placeholder: "Type a message", class: "form-control", id: "message_body" %>
+        <%= f.text_field :body, placeholder: "Type a message", class: "form-control", id: "chat_message_body" %>
         <div class="input-group-append">
-          <%= f.submit "Send", class: "btn btn-secondary" %>
+          <%= f.submit "Send", class: "btn btn-secondary", id: "send-chat" %>
         </div>
       </div>
     <% end %>
