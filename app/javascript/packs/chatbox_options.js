@@ -10,6 +10,9 @@ $(document).ready(function() {
   });
   $(document).on("click","#send-chat", function(event) {
     console.log('sending');
-    $('#chat_message_body').val('');
+    function clearInput() {
+      $('#chat_message_body').val('');
+    };
+    setTimeout(clearInput, 50)
   });
 });
