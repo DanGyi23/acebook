@@ -1,13 +1,13 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/d34d8b3ddc9bac34bbe4/maintainability)](https://codeclimate.com/github/DanGyi23/acebook-rails-template-railz-rude-boiz/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/d34d8b3ddc9bac34bbe4/test_coverage)](https://codeclimate.com/github/DanGyi23/acebook-rails-template-railz-rude-boiz/test_coverage)
 # Acebook - README
 
-An original social networking application developed in rails
+An **original** social networking application developed in rails
 
 - [Link to LIVE Heroku App](https://mighty-woodland-36916.herokuapp.com/users/sign_in)
-- [Link to ActiveStorage Blog Post](https://medium.com/@daniel.gyi/integrating-active-storage-with-your-existing-devise-framework-rails-bf9fc65a43c1)
 - [Link to Daily Learnings/Planning doc](https://github.com/DanGyi23/acebook-rails-template-railz-rude-boiz/blob/master/Learning-WIKI/Railz-Rude-Boiz-Wiki.md)
+- [Link to ActiveStorage Blog Post](https://medium.com/@daniel.gyi/integrating-active-storage-with-your-existing-devise-framework-rails-bf9fc65a43c1)
 
-We used a Trello board as a team of 4 to estimate work, plan sprints, and implement features. 
+We also used a Trello board as a team of 4 to estimate work, plan sprints, and implement features. 
 
 ## Getting Started
 
