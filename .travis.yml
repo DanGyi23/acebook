@@ -5,7 +5,7 @@ rvm:
 
 env:
   global:
-  - CC_TEST_REPORTER_ID=69d498fcf01080220f9e224b834c1689485d37ebf72420f07205baa104f9d4ea
+    - CC_TEST_REPORTER_ID=69d498fcf01080220f9e224b834c1689485d37ebf72420f07205baa104f9d4ea
 
 before_install:
   - sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"  - brew install ImageMagick
