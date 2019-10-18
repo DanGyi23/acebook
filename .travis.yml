@@ -28,5 +28,5 @@ script:
   - bundle exec rails db:migrate
   - bundle exec rspec
 
-  after_script:
+after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
