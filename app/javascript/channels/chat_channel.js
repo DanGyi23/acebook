@@ -14,9 +14,8 @@ consumer.subscriptions.create("ChatChannel", {
   received(data) {
     // Called when there's incoming data on the websocket for this channel
     // console.log(`receiving: ${data}`)
-    $('#message_body').val('');
     var messages = $('#chatbox');
-    console.log({data});
     messages.prepend(data['message']);
+    $('#chatbox-btn').css('background-color', '#28a745')
   }
 });

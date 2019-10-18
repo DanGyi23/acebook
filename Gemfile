@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
-gem "aws-sdk-s3", require: false
+gem "aws-sdk-s3"
 # custom gems for action cable
 # gem 'bootstrap'
 gem 'jquery-rails'
@@ -44,6 +44,7 @@ gem 'activestorage'
 gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 # Adds support for Capybara system testing and selenium driver
 gem 'capybara'
+gem 'codeclimate-test-reporter', require: false
 gem 'image_processing', '~> 1.2'
 gem 'selenium-webdriver'
 gem 'rails-controller-testing'

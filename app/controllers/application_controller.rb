@@ -8,15 +8,14 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:account_update) { |u| u.permit(:avatar, :email, :password, :password_confirmation, :current_password) }
   end
 
-  def populate_chatbox
-    @messages = Message.all
-    @message = Message.new
-  end
-
   private
   def after_sign_out_path_for(resource_or_scope)
     new_user_session_path
   end
 
+  def populate_chatbox
+    @messages = Message.all
+    @message = Message.new
+  end
 
 end
