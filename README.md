@@ -4,7 +4,7 @@
 An **original** social networking application developed in rails
 
 - [Link to LIVE Heroku App](https://mighty-woodland-36916.herokuapp.com/users/sign_in)
-- [Link to Daily Learnings/Planning doc](https://github.com/DanGyi23/acebook-rails-template-railz-rude-boiz/blob/master/Learning-WIKI/Railz-Rude-Boiz-Wiki.md)
+- [Link to Daily Wiki doc](https://github.com/DanGyi23/acebook-rails-template-railz-rude-boiz/blob/master/Learning-WIKI/Railz-Rude-Boiz-Wiki.md)
 - [Link to ActiveStorage Blog Post](https://medium.com/@daniel.gyi/integrating-active-storage-with-your-existing-devise-framework-rails-bf9fc65a43c1)
 - [End of week 1 functionality video](https://github.com/DanGyi23/acebook-rails-template-railz-rude-boiz/blob/master/video-screencaps/Functionality-end-of-week-1.mov)
 - [End of week 2 functionality video](https://github.com/DanGyi23/acebook-rails-template-railz-rude-boiz/blob/master/video-screencaps/Functionality-end-of-week-2.mov)
