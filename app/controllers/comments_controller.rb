@@ -1,9 +1,5 @@
 class CommentsController < ApplicationController
-  
-  def new
-    @comment = Comment.new
-  end
-  
+
   def create
     @comment = Comment.new(message: params["message"], post_id: params[:post_id], user_id: current_user.id, email: current_user.email)
     if @comment.save
