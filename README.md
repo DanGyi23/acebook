@@ -29,12 +29,12 @@ $ rails -v
 
 
 | Tech used        | What does it do?    | How we used it  |
-| ---------------- |:-----------------------------:| ------------------:|
+| :----------------: |:-----------------------------:| :------------------:|
 | Ruby ~> v2.6.3   | Backend, (MVC)      | In MVC layers   |
 | Rails ~> v6.0.0  | Web App framework   | For exactly that|
 | Devise           | Authentication for rails apps | Auth and tracking sessions                |
 | ActiveStorage    | Stores files referentially                    | Storing uploaded user profile images                |
-| ActiveRecord     | Built-in ORM for Rails                    | creating DB Migrations and creating/joining tables      |
+| ActiveRecord     | Built-in ORM for Rails                    | Creating DB Migrations and creating/joining tables      |
 | ImageMagick      | Image manipulating software           | Shrinking/editing images in-situ in views                |
 | ActionCable      | Opens websockets to create persisted connection  | Built a live chat                |
 | RSpec            | Ruby testing framework  | To test controllers/models                 |
