@@ -3,7 +3,6 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :populate_chatbox
-  before_action :return_friends
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:account_update) { |u| u.permit(:avatar, :email, :password, :password_confirmation, :current_password) }
@@ -24,11 +23,5 @@ class ApplicationController < ActionController::Base
     @messages = Message.all
     @message = Message.new
   end
-
-  def return_friends
-    @friendships = Friendship.where(user_id: current_user)
-    @my_friends = @friendships.map { |friendship| User.find(friendship.friend_id)}
-  end
-
 
 end

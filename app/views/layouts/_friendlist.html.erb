@@ -1,7 +1,0 @@
-<div class="card fixed-bottom" style="width: 10rem;">
-  <% @my_friends.each do |friend| %>
-  <div class="card-body well">
-    <p class="friend_status" id="status-<%= friend.id %>" style="color: red;"><%= friend.email.split("@")[0] %><p>
-  </div>
-  <% end %>
-</div>
